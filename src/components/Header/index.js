@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from '../Buttons';
 import Container from '../Container';
+import LogoImg from '../../assets/images/Logo.svg';
 
 const Nav = styled.div`
     width: 100%;
@@ -13,16 +14,24 @@ const Nav = styled.div`
     align-items: center;
 `;
 
-const Logo = styled.div`
-    width: 80px;
-    height: 80px;
+const LogoLink = styled.a`
+    width: 50px;
+    height: 50px;
+`;
+
+const Logo = styled.img`
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 `;
 
 export default function Header() {
   return (
     <Nav>
       <Container>
-        <Logo />
+        <LogoLink href="#">
+          <Logo src={LogoImg} alt="Logo do site" />
+        </LogoLink>
         <Container style={{ width: '330px', margin: '0' }}>
           <Button>Portfolio</Button>
           <Button>Sobre</Button>

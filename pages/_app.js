@@ -4,6 +4,7 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components';
 // eslint-disable-next-line import/no-unresolved
 import Head from 'next/head';
 import db from '../db.json';
+import LogoImg from '../src/assets/images/Logo.svg';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -35,6 +36,9 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <title>{db.title}</title>
+        <link rel="shortcut icon" href={LogoImg} />
+        <meta httpEquiv="content-language" content="pt-br" />
+        <meta name="description" content={db.description} />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&display=swap" rel="stylesheet" />
       </Head>
