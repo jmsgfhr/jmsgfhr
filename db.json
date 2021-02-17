@@ -1,0 +1,17 @@
+{
+    "bg":"https://i.imgur.com/NMHBMEP.png",
+    "title": "",
+    "description": "",
+    "theme": {
+        "colors": {
+            "primary": "#4affff",
+            "secondary": "#ff4acc",
+            "terciary":"#fbff27",
+            "bg": "#fafafa",
+            "bgDark":"#000000",
+            "text": "#000000",
+            "textDark": "#fafafa"
+        },
+        "borderRadius": "0px"
+    }
+}
