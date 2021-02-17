@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import Header from '../src/components/Header';
 import db from '../db.json';
@@ -46,24 +47,26 @@ const PresentationSubTitle = styled.h2`
   text-align: center;
 `;
 
-
 export default function Home() {
   return (
     <BoxContent>
-      <Header></Header>
+      <Header />
       <HomePresentation>
-        <Container style={{ position: "relative", height: "100%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+        <Container style={{
+          position: 'relative', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+        }}
+        >
           <PresentationTextWrapper>
             <svg width="320" height="209" viewBox="0 0 320 209" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0)">
+              <g clipPath="url(#clip0)">
                 <g filter="url(#filter0_d)">
                   <path d="M123.163 194.906L320.039 0.614962L0 44.9664L123.163 194.906Z" fill="#4AFFFF" />
                   <path d="M123.163 194.906L320.039 0.614962L0 44.9664L123.163 194.906Z" fill="url(#paint0_linear)" />
                 </g>
               </g>
               <defs>
-                <filter id="filter0_d" x="0" y="0" width="348.002" height="213.976" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <filter id="filter0_d" x="0" y="0" width="348.002" height="213.976" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
                   <feOffset dx="5" dy="5" />
                   <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" />
@@ -71,8 +74,8 @@ export default function Home() {
                   <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
                 </filter>
                 <linearGradient id="paint0_linear" x1="239" y1="73.9664" x2="16" y2="76.9664" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#4AFFFF" />
-                  <stop offset="1" stop-color="#FF4ACC" />
+                  <stop stopColor="#4AFFFF" />
+                  <stop offset="1" stopColor="#FF4ACC" />
                 </linearGradient>
                 <clipPath id="clip0">
                   <rect width="320" height="209" fill="white" />
@@ -82,7 +85,9 @@ export default function Home() {
 
           </PresentationTextWrapper>
           <PresentationTitle>Olá,</PresentationTitle>
-          <PresentationSubTitle>eu sou Jonathan Meirelles, programador Front-End.</PresentationSubTitle>
+          <PresentationSubTitle>
+            eu sou Jonathan Meirelles, programador Front-End.
+          </PresentationSubTitle>
         </Container>
       </HomePresentation>
     </BoxContent>

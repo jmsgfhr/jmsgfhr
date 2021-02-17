@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import Button from '../Buttons';
 import Container from '../Container';
@@ -18,16 +19,16 @@ const Logo = styled.div`
 `;
 
 export default function Header() {
-    return (
-        <Nav>
-            <Container>
-                <Logo></Logo>
-                <Container style={{width: "330px",margin: "0"}}>
-                    <Button>Portfolio</Button>
-                    <Button>Sobre</Button>
-                    <Button>Contato</Button>
-                </Container>
-            </Container>
-        </Nav>
-    );
+  return (
+    <Nav>
+      <Container>
+        <Logo />
+        <Container style={{ width: '330px', margin: '0' }}>
+          <Button>Portfolio</Button>
+          <Button>Sobre</Button>
+          <Button>Contato</Button>
+        </Container>
+      </Container>
+    </Nav>
+  );
 }
