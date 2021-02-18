@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Button = styled.button`
     color: ${({ theme }) => theme.colors.text};
-    background-color: ${({ theme }) => theme.colors.primary};
+    background-color: ${({ theme }) => theme.colors.bg};
     border-radius: ${({ theme }) => theme.borderRadius};
     box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
     font-size: .8rem;
@@ -14,7 +14,7 @@ const Button = styled.button`
 
     &:hover{
         transition:.3s;
-        background-color: ${({ theme }) => theme.colors.secondary};
+        background-color: ${({ theme }) => theme.colors.primary};
     }
 `;
 

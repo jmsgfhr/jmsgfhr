@@ -4,8 +4,8 @@ import LogoWhite from '../../assets/images/LogoWhite.svg';
 
 const BoxContainer = styled.div`
     width: 100vw;
-    height: 800vh;
-    background-color: #4AFFFF;
+    height: 650vh;
+    background-color: ${({ theme }) => theme.colors.primary};
     overflow: hidden;
     z-index: 3;
     visibility: ${(props) => props.visible};
@@ -25,7 +25,7 @@ export default function HomePresentation() {
   const [visible, setVisible] = useState('visible');
 
   function logit() {
-    if (window.pageYOffset / 100 > 1 && window.pageYOffset / 100 < 46) {
+    if (window.pageYOffset / 100 > 1 && window.pageYOffset / 100 < 40) {
       setScrollScale(parseInt(window.pageYOffset / 100, 10));
       setVisible('visible');
     } else if (window.pageYOffset / 100 < 1) setScrollScale(1);

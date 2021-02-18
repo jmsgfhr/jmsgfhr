@@ -12,14 +12,19 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     margin: 0;
+    margin-top: 80px;
     padding: 0;
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
+    background-color: ${({ theme }) => theme.colors.primary};
     color: ${({ theme }) => theme.colors.text};
   }
   html, body {
     min-height: 100vh;
+  }
+  html{
+    scroll-padding-top: 80px;
   }
   #__next {
     flex: 1;
