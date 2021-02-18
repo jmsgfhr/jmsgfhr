@@ -13,7 +13,7 @@ Link da Página publicada automaticamente no Vercel: [Abrir](https://jmsgfhr.ver
 ## Como usar localmente
 
 <details>
-<summary>Click to expand workaround example</summary>
+<summary>Exemplo de uso</summary>
 
 **Clone e install**
 

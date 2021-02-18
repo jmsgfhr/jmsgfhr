@@ -31,7 +31,7 @@ const Logo = styled.img`
 
 export default function Header() {
   return (
-    <Nav >
+    <Nav>
       <Container>
         <LogoLink href="#">
           <Logo src={LogoImg} alt="Logo do site" />
