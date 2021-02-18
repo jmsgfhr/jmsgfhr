@@ -12,6 +12,10 @@ const Nav = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 `;
 
 const LogoLink = styled.a`
@@ -27,7 +31,7 @@ const Logo = styled.img`
 
 export default function Header() {
   return (
-    <Nav>
+    <Nav >
       <Container>
         <LogoLink href="#">
           <Logo src={LogoImg} alt="Logo do site" />

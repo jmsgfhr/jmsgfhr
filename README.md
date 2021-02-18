@@ -17,7 +17,7 @@ Link da Página publicada automaticamente no Vercel: [Abrir](https://jmsgfhr.ver
 
 **Clone e install**
 
-```
+```bash
 git clone git@github.com:jmsgfhr/jmsgfhr.git
 cd jmsgfhr
 npm install
@@ -25,6 +25,6 @@ npm install
 
 **Iniciar servidor local**
 
-```
+```bash
 npm run dev
 ```
