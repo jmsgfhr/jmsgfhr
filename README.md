@@ -1,6 +1,6 @@
 # Jmsgfhr WebSite
-[![](https://img.shields.io/badge/Next.js-latest-blue)](https://nextjs.org/)
-[![](https://img.shields.io/badge/Styled--Components-5.2.1-ff69b4)](https://styled-components.com/)
+[![](https://img.shields.io/badge/Next.js-latest-blue?logo=Next.js)](https://nextjs.org/)
+[![](https://img.shields.io/badge/Styled--Components-5.2.1-ff69b4?logo=styled-components)](https://styled-components.com/)
 
 Site pessoal desenvolvido com [Next.js](https://nextjs.org/) e publicado no [Vercel](https://vercel.com).
 
